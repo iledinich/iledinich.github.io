@@ -2848,9 +2848,6 @@ input, select, textarea {
 			border-radius: 0.5rem;
 		}
 
-		.features > li > a {
-			float: right;
-		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
 				margin-top: 0;
