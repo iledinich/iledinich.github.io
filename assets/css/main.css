@@ -2836,10 +2836,20 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
-			margin-left: 2em;
-			margin-top: 3em;
-			padding: 0;
+			padding: 2rem;
+			width: 40%;
+			border-radius: 1rem;
+			margin: 10px;
+			background-color: #efefef;
+		}
+
+		.features img {
+			width: 100%;
+			border-radius: 0.5rem;
+		}
+
+		.features > li > a {
+			float: right;
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
