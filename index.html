@@ -4,7 +4,7 @@
 <head>
 	<title>Ivan Ledinich - Portfolio</title>
 	<meta charset="utf-8" />
-	<link rel="shortcut icon" type="image/png" href="assets/coding.png"/>
+	<link rel="shortcut icon" type="image/png" href="assets/coding.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/animate.css">
@@ -13,10 +13,10 @@
 
 
 	<!--  Essential META Tags -->
-
+	<meta property="og:image" content="url_image">
 	<meta property="og:title" content="Ivan Ledinich - Portfolio">
 	<meta property="og:description" content="A full stack developer passionate about technology.">
-	<meta property="og:image" content="http://ivan.ledinich/images/portfolio.jpg">
+	<meta property="og:image" content="https://ivanledinich.com/images/portfolio.jpg">
 	<meta property="og:url" content="http://ivan.ledinich/index.htmt">
 	<meta name="twitter:card" content="summary_large_image">
 
@@ -51,6 +51,12 @@
 				<li><a href="#second">Contact</a></li>
 			</ul>
 		</nav>
+
+		<!-- thumbnail -->
+		<link itemprop="thumbnailUrl" href="https://ivanledinich.com/images/portfolio.jpg">
+		<span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+			<link itemprop="url" href="https://ivanledinich.com/images/portfolio.jpg">
+		</span>
 
 		<!-- Main -->
 		<div id="main">
@@ -92,21 +98,23 @@
 					<li>
 						<img src="images/pic02.jpg" alt="">
 						<h3>Virtual Pong</h3>
-						<p>The first table tennis mixed reallity game in Argentina! Using Microsoft Kinect + Unity + Projector.</p>
+						<p>The first table tennis mixed reallity game in Argentina! Using Microsoft Kinect + Unity +
+							Projector.</p>
 						<div class="align-right">
 							<a href="https://github.com/iledinich/virtualpongv2" target="_blank">GitHub Code</a><br>
 							<a href="https://virtualpong.net/" target="_blank">Go site</a>
 						</div>
-						
+
 					</li>
 					<li>
 						<img src="images/pic03.jpg" alt="">
 						<h3>Today Notes</h3>
-						<p>Simple ToDo application using NET Core 2.2 + Angular 6 + JWT Authentication, deployed under Azure.</p>
+						<p>Simple ToDo application using NET Core 2.2 + Angular 6 + JWT Authentication, deployed under
+							Azure.</p>
 						<div class="align-right">
 							<a href="https://github.com/iledinich/TodayNotes" target="_blank">GitHub Code</a><br>
 							<a href="https://todaynotes.azurewebsites.net" target="_blank">Go site</a>
-						</div>	
+						</div>
 					</li>
 				</ul>
 			</section>
