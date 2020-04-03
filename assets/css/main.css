@@ -2419,9 +2419,8 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -3810,23 +3809,27 @@ input, select, textarea {
 
 		}
 
+.ntimes{
+	animation-iteration-count: 3;
+}
+
 /* Background */
 body {
 
 	color: #fff;
-	background: linear-gradient(-45deg, rgb(123, 50, 241), rgb(223, 68, 68), rgb(58, 84, 231), rgb(42, 216, 164));
 	background-size: 400% 400%;
-	animation: Gradient 12s ease infinite;
+	animation: Gradient 12s ease-in;
+	background-color:  rgb(81, 58, 231);
 }
 
 @keyframes Gradient {
 	0% {
-		background-position: 0% 50%
+		background-color:  rgb(198, 71, 71);
 	}
 	50% {
-		background-position: 100% 50%
+		background-color: rgb(123, 50, 241);
 	}
 	100% {
-		background-position: 0% 50%
+		background-color:  rgb(81, 58, 231);
 	}
 }
