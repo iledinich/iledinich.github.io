@@ -67,6 +67,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2419,12 +2420,12 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: none;
-		margin: 0 0 2em 0;
+		list-style:square;
+		margin: 0 0 4em 1.5em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0em;
 		}
 
 		ul.alt {
@@ -2814,7 +2815,7 @@ input, select, textarea {
 	}
 
 /* Features */
-
+	
 	.features {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2829,22 +2830,17 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0 0 0.5em -2em;
 		padding: 0;
 		list-style: none;
+		background-color: black;
+		border-radius: 0.5em;
+		padding: 10px;
 	}
 
-		.features li {
-			padding: 2rem;
-			width: 40%;
-			border-radius: 1rem;
-			margin: 10px;
-			background-color: #efefef;
-		}
 
 		.features img {
-			width: 100%;
-			border-radius: 0.5rem;
+			width: 20%;
 		}
 
 
@@ -2872,7 +2868,7 @@ input, select, textarea {
 
 			.features {
 				width: 100%;
-				margin: 0 0 2em 0;
+				margin: 0 0 0.5em 0;
 			}
 
 				.features li {
@@ -2961,7 +2957,7 @@ input, select, textarea {
 				display: block;
 				width: 20em;
 				max-width: 100%;
-				margin: 0 auto 2em auto;
+				margin: 2em auto 2em auto;
 			}
 
 				.statistics li:first-child {
@@ -3034,7 +3030,6 @@ input, select, textarea {
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
-				text-align: center;
 			}
 
 				.spotlight .content {
@@ -3045,10 +3040,7 @@ input, select, textarea {
 					width: 100%;
 				}
 
-					.spotlight .content header.major h2:after {
-						margin-left: auto;
-						margin-right: auto;
-					}
+
 
 					.spotlight .content .actions {
 						-moz-justify-content: center;
@@ -3832,4 +3824,22 @@ body {
 	100% {
 		background-color:  rgb(81, 58, 231);
 	}
+}
+
+video {
+    width: 25%;
+	/* transform: rotate(-90deg); */
+}
+
+@media screen and (max-width: 736px) {
+
+	video {
+		width: 80%;
+		/* transform: rotate(0deg); */
+	}
+
+		.opt-img{
+			display: none;
+		}
+
 }
