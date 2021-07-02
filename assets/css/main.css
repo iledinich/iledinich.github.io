@@ -3843,3 +3843,8 @@ video {
 		}
 
 }
+
+.rotated{
+	font-size: 40px;
+    	transform: rotate(90deg);
+}
